@@ -1,0 +1,69 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Drop Zone */
+.drop-zone {
+    border: 2px dashed white;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.drop-zone:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* File Preview */
+#file-preview {
+    margin-top: 15px;
+}
+
+.file-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Browse Text */
+.browse {
+    color: yellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+}
